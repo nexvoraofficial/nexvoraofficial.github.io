@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8C72N6RZP2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8C72N6RZP2');
+</script>
+  
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How to Build Your First Website | Nexvora</title>
+
+<meta
+name="description"
+content="Learn how to build your first professional website step by step using HTML, CSS and JavaScript. A complete beginner-friendly website development guide.">
+
+<link rel="icon" href="../favicon.ico">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link
+rel="canonical"
+href="https://nexvoraofficial.github.io/nexvora/articles/first-website.html">
+
+<meta property="og:type" content="article">
+
+<meta
+property="og:title"
+content="How to Build Your First Website | Nexvora">
+
+<meta
+property="og:description"
+content="Learn how to build a professional website from scratch using HTML, CSS and JavaScript.">
+
+<meta
+property="og:image"
+content="https://nexvoraofficial.github.io/nexvora/images/blog/first-website.png">
+
+<meta
+property="og:url"
+content="https://nexvoraofficial.github.io/nexvora/articles/first-website.html">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta
+name="twitter:title"
+content="How to Build Your First Website | Nexvora">
+
+<meta
+name="twitter:description"
+content="A complete beginner-friendly guide to building your first website.">
+
+<meta
+name="twitter:image"
+content="https://nexvoraofficial.github.io/nexvora/images/blog/first-website.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Build Your First Website",
+  "image": "https://nexvoraofficial.github.io/nexvora/images/blog/first-website.png",
+  "author": {
+    "@type": "Organization",
+    "name": "Nexvora"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nexvora"
+  },
+  "datePublished": "2026-07-12",
+  "dateModified": "2026-07-12",
+  "description": "Learn how to build your first professional website step by step using HTML, CSS and JavaScript."
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="reading-progress"></div>
+
+<header>
+
+<div class="container nav">
+
+<a href="../index.html" class="logo">
+
+<img
+src="../images/logo.png"
+alt="Nexvora Logo">
+
+</a>
+
+<nav>
+
+<a href="../index.html">Home</a>
+
+<a href="../services.html">Services</a>
+
+<a href="../portfolio.html">Portfolio</a>
+
+<a href="../blog.html" class="active">Blog</a>
+
+<a href="../about.html">About</a>
+
+<a href="../contact.html">Contact</a>
+
+<button
+id="theme-toggle"
+class="theme-toggle">
+🌙
+</button>
+
+</nav>
+
+</div>
+
+</header>
+
+<main class="container article-page">
+
+<article class="card">
+
+<nav class="breadcrumb">
+
+<a href="../index.html">Home</a>
+
+<span>›</span>
+
+<a href="../blog.html">Blog</a>
+
+<span>›</span>
+
+<a href="../blog.html">Web Development</a>
+
+<span>›</span>
+
+<span>How to Build Your First Website</span>
+
+</nav>
+
+<p class="article-meta">
+
+Web Development • July 12, 2026 • 18 min read
+
+</p>
+
+<h1>
+
+How to Build Your First Website
+
+</h1>
+
+<img
+src="../images/blog/first-website.png"
+alt="How to Build Your First Website"
+class="article-image">
+
+<p>
+
+Building your first website may seem difficult, but the process becomes much easier when it is divided into simple steps. In this complete guide, you will learn how to plan, design, build, test and publish a professional website using HTML, CSS and JavaScript.
+
+</p>
+
+<div id="article-content">
+
+<h2>Table of Contents</h2>
+
+<ul>
+
+<li>
+<a href="#introduction">
+Introduction
+</a>
+</li>
+
+<li>
+<a href="#how-websites-work">
+How Websites Work
+</a>
+</li>
+
+<li>
+<a href="#plan-your-website">
+1. Plan Your Website
+</a>
+</li>
+
+<li>
+<a href="#choose-tools">
+2. Choose Your Development Tools
+</a>
+</li>
+
+<li>
+<a href="#create-folder">
+3. Create Your Project Folder
+</a>
+</li>
+
+<li>
+<a href="#build-html">
+4. Build the HTML Structure
+</a>
+</li>
+
+<li>
+<a href="#style-css">
+5. Style Your Website with CSS
+</a>
+</li>
+
+<li>
+<a href="#javascript">
+6. Add JavaScript
+</a>
+</li>
+
+<li>
+<a href="#responsive-design">
+7. Make the Website Responsive
+</a>
+</li>
+
+<li>
+<a href="#website-pages">
+8. Create Important Website Pages
+</a>
+</li>
+
+<li>
+<a href="#seo">
+9. Add Basic SEO
+</a>
+</li>
+
+<li>
+<a href="#test">
+10. Test Your Website
+</a>
+</li>
+
+<li>
+<a href="#publish">
+11. Publish Your Website
+</a>
+</li>
+
+<li>
+<a href="#maintenance">
+12. Maintain and Improve Your Website
+</a>
+</li>
+
+<li>
+<a href="#mistakes">
+Common Beginner Mistakes
+</a>
+</li>
+
+<li>
+<a href="#checklist">
+Website Launch Checklist
+</a>
+</li>
+
+<li>
+<a href="#faq">
+Frequently Asked Questions
+</a>
+</li>
+
+<li>
+<a href="#conclusion">
+Conclusion
+</a>
+</li>
+
+</ul>
+
+<section
+id="introduction"
+class="article-section">
+
+<h2>Introduction</h2>
+
+<p>
+
+A website is one of the most valuable digital assets a person or business can own. It can be used to promote services, sell products, publish articles, display a portfolio, collect customer enquiries or build an online community.
+
+</p>
+
+<p>
+
+Many beginners believe that website development requires advanced programming knowledge. However, a basic professional website can be created using three core technologies: HTML, CSS and JavaScript.
+
+</p>
+
+<p>
+
+HTML creates the structure of the website. CSS controls the design and layout. JavaScript adds interactive features such as menus, buttons, forms, animations and theme controls.
+
+</p>
+
+<p>
+
+This guide explains the complete process of building a website from the beginning. You do not need previous coding experience, but you should be willing to practise and test your work carefully.
+
+</p>
+
+</section>
+
+<section
+id="how-websites-work"
+class="article-section">
+
+<h2>How Websites Work</h2>
+
+<p>
+
+A website is a collection of files stored on a web server. When a visitor enters the website address into a browser, the browser requests those files from the server and displays them on the screen.
+
+</p>
+
+<h3>The Main Parts of a Website</h3>
+
+<ul>
+
+<li>
+<strong>Domain name:</strong>
+The address visitors use to find the website.
+</li>
+
+<li>
+<strong>Web hosting:</strong>
+The server where the website files are stored.
+</li>
+
+<li>
+<strong>HTML:</strong>
+The structure and content of each page.
+</li>
+
+<li>
+<strong>CSS:</strong>
+The colours, fonts, spacing and layout.
+</li>
+
+<li>
+<strong>JavaScript:</strong>
+The interactive behaviour of the website.
+</li>
+
+<li>
+<strong>Browser:</strong>
+Software such as Chrome, Firefox or Safari that displays the website.
+</li>
+
+</ul>
+
+<p>
+
+When building your first website, you can create and test all the files on your computer before purchasing a domain name or hosting service.
+
+</p>
+
+</section>
+
+<section
+id="plan-your-website"
+class="article-section">
+
+<h2>1. Plan Your Website</h2>
+
+<p>
+
+Before writing code, decide what the website should achieve. A clear plan helps you avoid unnecessary pages, confusing layouts and repeated work.
+
+</p>
+
+<h3>Define the Website Goal</h3>
+
+<p>
+
+Ask yourself what visitors should do when they open the website. The goal may be to contact your business, purchase a product, view your portfolio, read articles or subscribe to a service.
+
+</p>
+
+<h3>Identify Your Target Audience</h3>
+
+<p>
+
+Consider who will visit the website and what information they need. A website for local customers may be different from a website designed for an international audience.
+
+</p>
+
+<h3>Plan the Main Pages</h3>
+
+<p>
+
+A basic business website commonly includes the following pages:
+
+</p>
+
+<ul>
+
+<li>Home</li>
+
+<li>Services</li>
+
+<li>Portfolio</li>
+
+<li>Blog</li>
+
+<li>About</li>
+
+<li>Contact</li>
+
+</ul>
+
+<h3>Create a Simple Sitemap</h3>
+
+<p>
+
+A sitemap shows how the pages are connected. Planning this structure early makes navigation easier to build and improves the visitor experience.
+
+</p>
+
+</section>
+
+<section
+id="choose-tools"
+class="article-section">
+
+<h2>2. Choose Your Development Tools</h2>
+
+<p>
+
+You do not need expensive software to build a website. Many professional development tools are available free of charge.
+
+</p>
+
+<h3>Code Editor</h3>
+
+<p>
+
+A code editor is the program used to create and edit your website files. Choose an editor that supports HTML, CSS and JavaScript and provides helpful features such as syntax highlighting and automatic formatting.
+
+</p>
+
+<h3>Web Browser</h3>
+
+<p>
+
+Use a modern browser to test the website. Browser developer tools can help you inspect elements, identify errors and test the website on different screen sizes.
+
+</p>
+
+<h3>Image Editing Tool</h3>
+
+<p>
+
+Website images should be resized and compressed before they are uploaded. Large image files can make pages load slowly, particularly on mobile connections.
+
+</p>
+
+<h3>Version Control</h3>
+
+<p>
+
+Version control helps you track changes and restore an earlier version if something breaks. It is especially useful when the website becomes larger or multiple people work on the same project.
+
+</p>
+
+</section>
+
+<section
+id="create-folder"
+class="article-section">
+
+<h2>3. Create Your Project Folder</h2>
+
+<p>
+
+Create one main folder for the website. Keeping the files organised makes development easier and prevents broken links.
+
+</p>
+
+<h3>Recommended Folder Structure</h3>
+
+<pre><code>my-website/
+│
+├── index.html
+├── services.html
+├── portfolio.html
+├── blog.html
+├── about.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+└── images/
+    ├── logo.png
+    └── hero-image.png</code></pre>
+
+<p>
+
+The main homepage should normally be named <strong>index.html</strong>. Web servers automatically look for this file when visitors open the main domain.
+
+</p>
+
+<p>
+
+Use simple lowercase file names and avoid unnecessary spaces. Names such as <strong>contact.html</strong> and <strong>website-design.jpg</strong> are easier to manage than long or confusing file names.
+
+</p>
+
+</section>
+
+<section
+id="build-html"
+class="article-section">
+
+<h2>4. Build the HTML Structure</h2>
+
+<p>
+
+HTML defines the structure and content of a webpage. Every HTML page begins with a basic document structure.
+
+</p>
+
+<h3>Basic HTML Page</h3>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+
+&lt;meta charset="UTF-8"&gt;
+
+&lt;meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"&gt;
+
+&lt;title&gt;My First Website&lt;/title&gt;
+
+&lt;link
+rel="stylesheet"
+href="css/style.css"&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;header&gt;
+
+&lt;h1&gt;My First Website&lt;/h1&gt;
+
+&lt;/header&gt;
+
+&lt;main&gt;
+
+&lt;h2&gt;Welcome&lt;/h2&gt;
+
+&lt;p&gt;
+This is my first professional website.
+&lt;/p&gt;
+
+&lt;/main&gt;
+
+&lt;footer&gt;
+
+&lt;p&gt;
+© 2026 My Website
+&lt;/p&gt;
+
+&lt;/footer&gt;
+
+&lt;script src="js/script.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+
+<h3>Use Semantic HTML</h3>
+
+<p>
+
+Semantic elements explain the purpose of different parts of a webpage. They make the website easier for browsers, search engines, screen readers and developers to understand.
+
+</p>
+
+<ul>
+
+<li>
+<strong>&lt;header&gt;</strong> for the page header.
+</li>
+
+<li>
+<strong>&lt;nav&gt;</strong> for navigation links.
+</li>
+
+<li>
+<strong>&lt;main&gt;</strong> for the primary content.
+</li>
+
+<li>
+<strong>&lt;section&gt;</strong> for grouped content.
+</li>
+
+<li>
+<strong>&lt;article&gt;</strong> for independent content.
+</li>
+
+<li>
+<strong>&lt;footer&gt;</strong> for the page footer.
+</li>
+
+</ul>
+
+<h3>Create the Navigation</h3>
+
+<pre><code>&lt;nav&gt;
+
+&lt;a href="index.html"&gt;Home&lt;/a&gt;
+
+&lt;a href="services.html"&gt;Services&lt;/a&gt;
+
+&lt;a href="portfolio.html"&gt;Portfolio&lt;/a&gt;
+
+&lt;a href="about.html"&gt;About&lt;/a&gt;
+
+&lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+
+&lt;/nav&gt;</code></pre>
+
+<p>
+
+Check every link carefully. A small mistake in a file path can prevent visitors from opening a page or loading an image.
+
+</p>
+
+</section>
+
+<section
+id="style-css"
+class="article-section">
+
+<h2>5. Style Your Website with CSS</h2>
+
+<p>
+
+CSS controls how the website looks. It can change colours, fonts, widths, spacing, borders, shadows and page layouts.
+
+</p>
+
+<h3>Basic CSS Example</h3>
+
+<pre><code>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f5f7fb;
+  color: #222;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: auto;
+}
+
+header {
+  background: #ffffff;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #222;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+}</code></pre>
+
+<h3>Maintain Consistent Design</h3>
+
+<p>
+
+Choose a small set of colours, one or two readable fonts and consistent spacing. Reusing the same button, card and section styles creates a professional appearance.
+
+</p>
+
+<h3>Use CSS Classes</h3>
+
+<p>
+
+Classes allow the same design rules to be used on multiple elements. Instead of writing a different style for every button, create one reusable button class.
+
+</p>
+
+<pre><code>.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}</code></pre>
+
+<h3>Avoid Excessive Effects</h3>
+
+<p>
+
+Animations, gradients and shadows can improve a design, but too many effects can make the website slow and distracting. Prioritise readability, usability and clear navigation.
+
+</p>
+
+</section>
+
+<section
+id="javascript"
+class="article-section">
+
+<h2>6. Add JavaScript</h2>
+
+<p>
+
+JavaScript controls interactive website features. It can respond to clicks, change page content, validate forms and create animations.
+
+</p>
+
+<h3>Automatically Update the Footer Year</h3>
+
+<pre><code>const yearElement = document.getElementById("year");
+
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}</code></pre>
+
+<p>
+
+The corresponding HTML can use the following element:
+
+</p>
+
+<pre><code>&lt;p&gt;
+© &lt;span id="year"&gt;&lt;/span&gt; My Website
+&lt;/p&gt;</code></pre>
+
+<h3>Simple Theme Toggle</h3>
+
+<pre><code>const themeToggle =
+document.getElementById("theme-toggle");
+
+if (themeToggle) {
+
+  themeToggle.addEventListener("click", () =&gt; {
+
+    document.body.classList.toggle("dark-mode");
+
+  });
+
+}</code></pre>
+
+<h3>Scroll-to-Top Button</h3>
+
+<pre><code>const scrollButton =
+document.getElementById("scroll-top");
+
+window.addEventListener("scroll", () =&gt; {
+
+  if (window.scrollY &gt; 400) {
+
+    scrollButton.classList.add("show");
+
+  } else {
+
+    scrollButton.classList.remove("show");
+
+  }
+
+});
+
+scrollButton.addEventListener("click", () =&gt; {
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+});</code></pre>
+
+<p>
+
+Always check that an element exists before using it in JavaScript. This prevents errors on pages that do not contain that element.
+
+</p>
+
+</section>
+
+<section
+id="responsive-design"
+class="article-section">
+
+<h2>7. Make the Website Responsive</h2>
+
+<p>
+
+A responsive website automatically adapts to desktop computers, tablets and mobile phones. Mobile usability is essential because many visitors access websites using smaller screens.
+
+</p>
+
+<h3>Add the Viewport Meta Tag</h3>
+
+<pre><code>&lt;meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+
+<h3>Use Flexible Widths</h3>
+
+<pre><code>.container {
+  width: min(1100px, 90%);
+  margin: auto;
+}</code></pre>
+
+<p>
+
+This limits the content width on large screens while allowing it to fit smaller screens.
+
+</p>
+
+<h3>Use Responsive Images</h3>
+
+<pre><code>img {
+  max-width: 100%;
+  height: auto;
+}</code></pre>
+
+<h3>Add a Media Query</h3>
+
+<pre><code>@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+}</code></pre>
+
+<p>
+
+Test the website at several screen sizes. Do not assume that a layout working on your phone will work correctly on every mobile device.
+
+</p>
+
+</section>
+
+<section
+id="website-pages"
+class="article-section">
+
+<h2>8. Create Important Website Pages</h2>
+
+<h3>Home Page</h3>
+
+<p>
+
+The homepage should quickly explain what the website offers and guide visitors toward an important action. Include a clear headline, short introduction, main services and a contact button.
+
+</p>
+
+<h3>Services Page</h3>
+
+<p>
+
+Describe each service clearly. Explain the problem it solves, the value it provides and how customers can request more information.
+
+</p>
+
+<h3>Portfolio Page</h3>
+
+<p>
+
+Display your best work, projects or case studies. Use quality images and provide a short explanation of each project.
+
+</p>
+
+<h3>About Page</h3>
+
+<p>
+
+Explain who you are, what the business does and why visitors should trust you. Avoid filling the page with unnecessary history that does not help the customer.
+
+</p>
+
+<h3>Blog Page</h3>
+
+<p>
+
+A blog can attract visitors through search engines and demonstrate your knowledge. Publish useful articles that answer real questions related to your services.
+
+</p>
+
+<h3>Contact Page</h3>
+
+<p>
+
+Include a working contact form, email address and other relevant contact details. Keep the form simple so visitors can complete it easily.
+
+</p>
+
+</section>
+
+<section
+id="seo"
+class="article-section">
+
+<h2>9. Add Basic SEO</h2>
+
+<p>
+
+Search Engine Optimization helps search engines understand your website and may improve its visibility in search results.
+
+</p>
+
+<h3>Write a Unique Page Title</h3>
+
+<pre><code>&lt;title&gt;
+Professional Web Design Services | My Business
+&lt;/title&gt;</code></pre>
+
+<h3>Add a Meta Description</h3>
+
+<pre><code>&lt;meta
+name="description"
+content="Professional web design and development services for businesses that want to grow online."&gt;</code></pre>
+
+<h3>Use Clear Headings</h3>
+
+<p>
+
+Each page should have one clear main heading. Use lower-level headings to organise the remaining content logically.
+
+</p>
+
+<h3>Write Descriptive Image Alt Text</h3>
+
+<pre><code>&lt;img
+src="images/web-design-project.jpg"
+alt="Responsive business website design displayed on a laptop"&gt;</code></pre>
+
+<h3>Use Descriptive URLs</h3>
+
+<p>
+
+A URL such as <strong>yourdomain.com/services.html</strong> is easier to understand than a URL containing random numbers or unclear words.
+
+</p>
+
+<h3>Create Useful Content</h3>
+
+<p>
+
+Write for real users instead of repeating keywords unnaturally. Useful, original and well-organised content provides more long-term value than keyword stuffing.
+
+</p>
+
+<h3>Improve Website Speed</h3>
+
+<p>
+
+Compress images, remove unnecessary code and avoid loading large files that the page does not need. Faster websites provide a better experience for visitors.
+
+</p>
+
+</section>
+
+<section
+id="test"
+class="article-section">
+
+<h2>10. Test Your Website</h2>
+
+<p>
+
+Testing is an important part of website development. Even a small error can affect navigation, forms, images or mobile layouts.
+
+</p>
+
+<h3>Check Every Page</h3>
+
+<ul>
+
+<li>Open every navigation link.</li>
+
+<li>Check all buttons.</li>
+
+<li>Confirm that images load correctly.</li>
+
+<li>Test internal article links.</li>
+
+<li>Check the footer information.</li>
+
+<li>Look for spelling and grammar mistakes.</li>
+
+</ul>
+
+<h3>Test the Contact Form</h3>
+
+<p>
+
+Submit a real test message and confirm that it reaches the correct email inbox. Also test incomplete fields and invalid email addresses.
+
+</p>
+
+<h3>Test on Different Devices</h3>
+
+<p>
+
+Check the website on desktop and mobile screens. Pay attention to navigation, tables, images, text sizes, forms and buttons.
+
+</p>
+
+<h3>Check Browser Compatibility</h3>
+
+<p>
+
+A website can behave differently across browsers. Test it using more than one modern browser before publishing it.
+
+</p>
+
+<h3>Use Browser Developer Tools</h3>
+
+<p>
+
+Developer tools can show JavaScript errors, missing files and layout problems. Check the browser console when a feature does not work as expected.
+
+</p>
+
+</section>
+
+<section
+id="publish"
+class="article-section">
+
+<h2>11. Publish Your Website</h2>
+
+<p>
+
+After the website has been tested, you can make it available online using a domain name and web hosting.
+
+</p>
+
+<h3>Choose a Domain Name</h3>
+
+<p>
+
+Select a domain that is short, memorable and relevant to your brand. Avoid complicated spelling, unnecessary numbers and long phrases.
+
+</p>
+
+<h3>Choose Web Hosting</h3>
+
+<p>
+
+The hosting service stores your website files and makes them available to visitors. Compare reliability, support, storage, security and renewal costs before selecting a plan.
+
+</p>
+
+<h3>Upload the Website Files</h3>
+
+<p>
+
+Upload the website folder using your hosting control panel, file manager, deployment service or version-control workflow.
+
+</p>
+
+<h3>Connect the Domain</h3>
+
+<p>
+
+The domain must be connected to the hosting service through its DNS settings. Follow the instructions provided by your domain and hosting providers.
+
+</p>
+
+<h3>Enable HTTPS</h3>
+
+<p>
+
+HTTPS protects information transferred between the website and its visitors. Confirm that the security certificate is active and that the website opens using the secure HTTPS address.
+
+</p>
+
+<h3>Final Online Test</h3>
+
+<p>
+
+After publishing, test the website again. File paths that work on your computer may fail online if uppercase letters, folder names or relative paths are incorrect.
+
+</p>
+
+</section>
+
+<section
+id="maintenance"
+class="article-section">
+
+<h2>12. Maintain and Improve Your Website</h2>
+
+<p>
+
+Publishing a website is not the end of the project. Websites require regular updates, backups and security checks.
+
+</p>
+
+<h3>Update Content</h3>
+
+<p>
+
+Keep service descriptions, contact details, portfolio projects and blog articles accurate. Outdated information can reduce customer trust.
+
+</p>
+
+<h3>Create Backups</h3>
+
+<p>
+
+Keep copies of the website files in more than one secure location. A backup allows you to restore the website after accidental changes or technical problems.
+
+</p>
+
+<h3>Check Forms and Links</h3>
+
+<p>
+
+Test contact forms and important links regularly. External websites may change their URLs, creating broken links on your pages.
+
+</p>
+
+<h3>Monitor Performance</h3>
+
+<p>
+
+Watch page speed, mobile usability and visitor behaviour. Use this information to identify pages that need improvement.
+
+</p>
+
+<h3>Improve Security</h3>
+
+<p>
+
+Use strong passwords, keep software updated and limit access to hosting accounts. Never publish private keys, passwords or confidential configuration details inside public website files.
+
+</p>
+
+</section>
+
+<section
+id="mistakes"
+class="article-section">
+
+<h2>Common Beginner Mistakes</h2>
+
+<h3>Creating Pages Without a Plan</h3>
+
+<p>
+
+Starting with code before planning the website often creates inconsistent layouts and confusing navigation.
+
+</p>
+
+<h3>Using Large Images</h3>
+
+<p>
+
+Uploading original high-resolution images can make the website extremely slow. Resize and compress images before adding them.
+
+</p>
+
+<h3>Ignoring Mobile Visitors</h3>
+
+<p>
+
+A desktop-only layout can be difficult to use on a phone. Build responsive behaviour from the beginning instead of adding it at the end.
+
+</p>
+
+<h3>Using Incorrect File Paths</h3>
+
+<p>
+
+The path used on a root-level page may be different from the path required by a page inside a subfolder.
+
+</p>
+
+<p>
+
+For example, a root-level page may use:
+
+</p>
+
+<pre><code>&lt;script src="js/script.js"&gt;&lt;/script&gt;</code></pre>
+
+<p>
+
+A page inside the <strong>articles</strong> folder may use:
+
+</p>
+
+<pre><code>&lt;script src="../js/script.js"&gt;&lt;/script&gt;</code></pre>
+
+<h3>Adding Too Many Animations</h3>
+
+<p>
+
+Animations should support the user experience. Excessive movement can distract visitors and reduce performance.
+
+</p>
+
+<h3>Publishing Without Testing</h3>
+
+<p>
+
+Always test forms, links, buttons and mobile layouts before sharing the website publicly.
+
+</p>
+
+<h3>Forgetting SEO Information</h3>
+
+<p>
+
+Every important page should have a meaningful title, description, main heading and descriptive image text.
+
+</p>
+
+</section>
+
+<section
+id="checklist"
+class="article-section">
+
+<h2>Website Launch Checklist</h2>
+
+<table>
+
+<tr>
+
+<th>Task</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>All pages created</td>
+
+<td>Check</td>
+
+</tr>
+
+<tr>
+
+<td>Navigation links working</td>
+
+<td>Check</td>
+
+</tr>
+
+<tr>
+
+<td>Images loading correctly</td>
+
+<td>Check</td>
+
+</tr>
+
+<tr>
+
+<td>Mobile design tested</td>
+
+<td>Check</td>
+
+</tr>
+
+<tr>
+
+<td>Contact form tested</td>
+
+<td>Check</td>
+
+</tr>
+
+<tr>
+
+<td>Page titles added</td>
+
+<td>Check</td>
+
+</tr>
+
+<tr>
+
+<td>Meta descriptions added</td>
+
+<td>Check</td>
+
+</tr>
+
+<tr>
+
+<td>Image alt text added</td>
+
+<td>Check</td>
+
+</tr>
+
+<tr>
+
+<td>Spelling reviewed</td>
+
+<td>Check</td>
+
+</tr>
+
+<tr>
+
+<td>HTTPS enabled</td>
+
+<td>Check</td>
+
+</tr>
+
+<tr>
+
+<td>Backup created</td>
+
+<td>Check</td>
+
+</tr>
+
+<tr>
+
+<td>Website tested online</td>
+
+<td>Check</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<section
+id="faq"
+class="article-section">
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Can a beginner build a professional website?</h3>
+
+<p>
+
+Yes. A beginner can build a professional website by learning basic HTML, CSS and JavaScript and following a structured development process.
+
+</p>
+
+<h3>Do I need to learn programming before building a website?</h3>
+
+<p>
+
+You can begin with basic HTML and CSS. JavaScript can be added gradually when you need interactive features.
+
+</p>
+
+<h3>How long does it take to build a website?</h3>
+
+<p>
+
+The time depends on the number of pages, design complexity, content and required features. A simple website can be built much faster than an online store or custom web application.
+
+</p>
+
+<h3>Can I build a website for free?</h3>
+
+<p>
+
+You can create and test website files for free on your computer. Publishing with a custom domain usually involves domain and hosting costs.
+
+</p>
+
+<h3>What is the difference between a website and a web application?</h3>
+
+<p>
+
+A website mainly presents content and information. A web application usually includes more advanced user interactions, accounts, databases or personalised features.
+
+</p>
+
+<h3>Do I need a database?</h3>
+
+<p>
+
+A simple static website may not need a database. A database becomes useful when the website stores user accounts, products, orders, messages or frequently updated information.
+
+</p>
+
+<h3>Why does my website work locally but not online?</h3>
+
+<p>
+
+Common causes include incorrect file paths, uppercase and lowercase differences, missing uploaded files or incorrect hosting configuration.
+
+</p>
+
+</section>
+
+<section
+id="conclusion"
+class="article-section">
+
+<h2>Conclusion</h2>
+
+<p>
+
+Building your first website is an excellent way to learn practical digital skills. By understanding HTML, CSS and JavaScript, you gain direct control over the structure, design and behaviour of your website.
+
+</p>
+
+<p>
+
+Start with a clear plan, create an organised folder structure and build one page at a time. Test every feature carefully, make the website responsive and optimise it before publishing.
+
+</p>
+
+<p>
+
+Your first website does not need to include every possible feature. A simple, fast and easy-to-use website is more valuable than a complicated website that confuses visitors.
+
+</p>
+
+<div
+class="card"
+style="margin-top:40px;text-align:center;">
+
+<h3>Need a Professional Website?</h3>
+
+<p>
+
+Nexvora helps businesses create modern, responsive and SEO-friendly websites designed to build trust and generate results.
+
+</p>
+
+<a
+href="../contact.html"
+class="btn">
+
+Contact Nexvora
+
+</a>
+
+</div>
+
+</section>
+
+<section class="article-section">
+
+<h2>About the Author</h2>
+
+<div class="card">
+
+<h3>Nexvora Team</h3>
+
+<p>
+
+Nexvora publishes practical articles about Artificial Intelligence, Web Design, SEO, Programming and Digital Marketing. Our goal is to help businesses and professionals create a stronger online presence using modern technology.
+
+</p>
+
+<p>
+
+<strong>Last Updated:</strong>
+July 12, 2026
+
+</p>
+
+<div class="article-tags">
+
+<span>Web Development</span>
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+<span>JavaScript</span>
+
+<span>Website Design</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="article-section">
+
+<h2>Share This Article</h2>
+
+<div class="article-share">
+
+<a
+href="https://www.facebook.com/sharer/sharer.php?u=https://yourdomain.com/articles/first-website.html"
+target="_blank"
+rel="noopener noreferrer"
+class="btn">
+
+Facebook
+
+</a>
+
+<a
+href="https://twitter.com/intent/tweet?url=https://yourdomain.com/articles/first-website.html&text=How%20to%20Build%20Your%20First%20Website"
+target="_blank"
+rel="noopener noreferrer"
+class="btn">
+
+X
+
+</a>
+
+<a
+href="https://www.linkedin.com/sharing/share-offsite/?url=https://yourdomain.com/articles/first-website.html"
+target="_blank"
+rel="noopener noreferrer"
+class="btn">
+
+LinkedIn
+
+</a>
+
+<button
+id="copy-article-link"
+class="btn">
+
+Copy Link
+
+</button>
+
+</div>
+
+</section>
+
+<section class="article-section">
+
+<h2>Related Articles</h2>
+
+<div class="features">
+
+<div class="card">
+
+<h3>Top 10 AI Tools for 2026</h3>
+
+<p>
+
+Discover powerful AI tools that can help you improve productivity, automate tasks and create content.
+
+</p>
+
+<a
+href="top-10-ai-tools-2026.html"
+class="btn">
+
+Read Article →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>SEO Checklist for Beginners</h3>
+
+<p>
+
+Improve your Google visibility with essential SEO techniques every beginner should understand.
+
+</p>
+
+<a
+href="seo-checklist.html"
+class="btn">
+
+Read Article →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Website Speed Optimization</h3>
+
+<p>
+
+Discover practical techniques to make your website load faster and improve user experience.
+
+</p>
+
+<a
+href="website-speed-optimization.html"
+class="btn">
+
+Read Article →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="article-section">
+
+<div class="article-navigation">
+
+<div class="card">
+
+<p>← Previous Article</p>
+
+<h3>
+
+<a href="top-10-ai-tools-2026.html">
+
+Top 10 AI Tools for 2026
+
+</a>
+
+</h3>
+
+</div>
+
+<div class="card">
+
+<p>Next Article →</p>
+
+<h3>
+
+<a href="seo-checklist.html">
+
+SEO Checklist for Beginners
+
+</a>
+
+</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="article-section">
+
+<div
+class="card"
+style="text-align:center;">
+
+<h2>Subscribe to Nexvora</h2>
+
+<p>
+
+Get the latest AI, Web Design, SEO and Technology articles delivered to your inbox.
+
+</p>
+
+<input
+type="email"
+placeholder="Enter your email"
+aria-label="Email address">
+
+<br><br>
+
+<button class="btn">
+
+Subscribe Free
+
+</button>
+
+</div>
+
+</section>
+
+</div>
+
+<p style="margin-top:40px;">
+
+<a
+href="../blog.html"
+class="btn">
+
+← Back to Blog
+
+</a>
+
+</p>
+
+</article>
+
+</main>
+
+<footer>
+
+<div class="container">
+
+<h3>Nexvora</h3>
+
+<p>
+
+Web Design • Development • SEO • AI Solutions
+
+</p>
+
+<p>
+
+© <span id="year"></span> Nexvora. All Rights Reserved.
+
+</p>
+<p style="margin-top:15px;">
+
+<a href="../privacy.html">Privacy Policy</a> |
+<a href="../terms.html">Terms & Conditions</a> |
+<a href="../disclaimer.html">Disclaimer</a>
+
+</p>
+</div>
+
+</footer>
+
+<button
+id="scroll-top"
+aria-label="Scroll to top">
+
+↑
+
+</button>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>
