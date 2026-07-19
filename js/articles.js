@@ -43,5 +43,20 @@ const articles = [
 
     description:
       "Follow this beginner-friendly SEO checklist to improve website visibility, performance and Google rankings."
-  }
+  },
+  {
+  id: "web-design-trends-2026",
+  url: "articles/web-design-trends-2026.html",
+
+  title: "10 Web Design Trends Every Business Should Follow in 2026",
+  category: "Web Design",
+  author: "Nexvora Team",
+  date: "July 17, 2026",
+  readTime: "12 min read",
+
+  image: "images/blog/web-design-trends-2026.png",
+
+  description:
+    "Discover the top web design trends every business should follow in 2026 to improve user experience, SEO, accessibility, website performance and conversions."
+}
 ];
