@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8C72N6RZP2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8C72N6RZP2');
+</script>
+    <meta property="og:url" content="https://nexvoraofficial.github.io/nexvora/">
+<meta property="og:image" content="https://nexvoraofficial.github.io/nexvora/images/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nexvora | Web Design & AI Solutions">
+<meta name="twitter:description" content="Modern websites, SEO and AI-powered digital solutions.">
+<meta name="twitter:image" content="https://nexvoraofficial.github.io/nexvora/images/og-image.jpg">
+
+<link rel="canonical" href="https://nexvoraofficial.github.io/nexvora/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nexvora | Web Design, Development & AI Solutions</title>
+
+    <meta name="description" content="Nexvora provides modern web design, web development, SEO, branding, and AI-powered digital solutions for businesses.">
+
+    <meta name="keywords" content="Web Design, Web Development, AI, SEO, Sri Lanka, Nexvora">
+
+    <meta name="author" content="Nexvora">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Nexvora | Web Design & AI Solutions">
+    <meta property="og:description" content="Build a professional online presence with Nexvora.">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+
+<header>
+    <div class="container nav">
+
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Nexvora Logo">
+        </a>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+    🌙
+</button>
+        </nav>
+
+    </div>
+</header>
+
+<section class="hero">
+
+    <div class="container">
+
+        <h1>Build Your Business with a Professional Website</h1>
+
+        <p>
+            Nexvora helps startups, businesses, and creators grow online with
+            modern websites, SEO, branding, and AI-powered digital solutions.
+        </p>
+
+        <a href="services.html" class="btn">Our Services</a>
+
+        <a href="contact.html" class="btn primary">Get Free Quote</a>
+
+    </div>
+
+</section>
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="features">
+
+    <div class="card">
+        <h3>🌐 Web Design</h3>
+        <p>
+            Modern, responsive and professional websites that build trust and
+            increase conversions.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>💻 Web Development</h3>
+        <p>
+            Fast, secure and scalable websites built using the latest
+            technologies.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🚀 SEO Optimization</h3>
+        <p>
+            Improve your Google rankings and attract more visitors with
+            powerful SEO strategies.
+        </p>
+    </div>
+
+</section>
+
+<!-- =========================
+     PORTFOLIO PREVIEW
+========================= -->
+
+<section class="container">
+
+    <h2 style="text-align:center; margin:60px 0 30px;">
+        Featured Projects
+    </h2>
+
+    <div class="features">
+
+        <div class="card">
+            <h3>Business Website</h3>
+            <p>
+                Professional company website with responsive design and SEO.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>E-Commerce Store</h3>
+            <p>
+                Online shopping website with secure payment integration.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>
+                Personal portfolio designed for freelancers and creators.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================
+     LATEST BLOG POSTS
+========================= -->
+
+<section class="container">
+
+    <h2 style="text-align:center; margin:60px 0 30px;">
+        Latest Blog Posts
+    </h2>
+
+    <div id="home-blog-posts" class="features"></div>
+
+</section>
+
+<!-- =========================
+     NEWSLETTER
+========================= -->
+
+<section class="container">
+
+    <div id="home-newsletter-card" class="card">
+
+        <h2>📩 Stay Updated</h2>
+
+        <p>
+            Get free AI, Web Design and SEO tips directly to your inbox.
+        </p>
+
+        <form action="https://formsubmit.co/mailnexvora@gmail.com" method="POST">
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New Newsletter Subscriber">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://nexvoraofficial.github.io/nexvora/index.html?subscribed=true">
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required>
+
+            <button type="submit" class="btn primary">
+                Subscribe Free
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<script>
+const params = new URLSearchParams(window.location.search);
+
+if (params.get("subscribed") === "true") {
+
+    const message = document.createElement("div");
+
+    message.textContent = "✅ Thank you for subscribing!";
+
+    message.style.background = "#d4edda";
+    message.style.color = "#155724";
+    message.style.padding = "15px";
+    message.style.marginBottom = "20px";
+    message.style.borderRadius = "10px";
+    message.style.fontWeight = "bold";
+    message.style.textAlign = "center";
+
+    const newsletterCard =
+    document.getElementById("home-newsletter-card");
+
+    if (newsletterCard) {
+        newsletterCard.prepend(message);
+    }
+
+    window.history.replaceState(
+        {},
+        document.title,
+        window.location.pathname
+    );
+}
+</script>
+    <!-- =========================
+     WHY HIRE NEXVORA
+========================= -->
+
+<section class="container">
+
+<h2 style="text-align:center; margin-bottom:15px;">
+Why Businesses Choose Nexvora
+</h2>
+
+<p style="text-align:center; color:var(--muted); max-width:760px; margin:0 auto 40px;">
+We create modern, responsive and SEO-ready websites designed to help businesses
+build trust, attract customers and grow online.
+</p>
+
+<div class="features">
+
+<div class="card">
+<h3>⚡ Fast Websites</h3>
+<p>
+Optimized for speed and a smooth experience across all devices.
+</p>
+</div>
+
+<div class="card">
+<h3>📱 Mobile Friendly</h3>
+<p>
+Every website is designed to work perfectly on phones, tablets and desktops.
+</p>
+</div>
+
+<div class="card">
+<h3>🔍 SEO Ready</h3>
+<p>
+Built with SEO best practices to improve visibility on search engines.
+</p>
+</div>
+
+<div class="card">
+<h3>💬 Ongoing Support</h3>
+<p>
+Need changes later? We provide continued support after your website is launched.
+</p>
+</div>
+
+</div>
+
+</section>
+    <!-- =========================
+     BUSINESS STATS
+========================= -->
+
+<section class="container">
+
+<h2 style="text-align:center; margin-bottom:15px;">
+What Nexvora Delivers
+</h2>
+
+<p style="text-align:center; color:var(--muted); max-width:720px; margin:0 auto 40px;">
+Every project is built with performance, usability and long-term online growth in mind.
+</p>
+
+<div class="features stats-grid">
+
+<div class="card stat-card">
+<h3>100%</h3>
+<p>Responsive Design</p>
+</div>
+
+<div class="card stat-card">
+<h3>SEO</h3>
+<p>Ready Structure</p>
+</div>
+
+<div class="card stat-card">
+<h3>Fast</h3>
+<p>Loading Performance</p>
+</div>
+
+<div class="card stat-card">
+<h3>Worldwide</h3>
+<p>Remote Service</p>
+</div>
+
+</div>
+
+</section>
+
+    <!-- =========================
+     OUR PROCESS
+========================= -->
+
+<section class="container">
+
+<h2 style="text-align:center; margin-bottom:15px;">
+Our Process
+</h2>
+
+<p style="text-align:center; color:var(--muted); max-width:720px; margin:0 auto 40px;">
+A simple and transparent process from your first idea to a successful website launch.
+</p>
+
+<div class="features">
+
+<div class="card">
+<h3>1️⃣ Contact</h3>
+<p>
+Tell us about your business, goals and website requirements.
+</p>
+</div>
+
+<div class="card">
+<h3>2️⃣ Planning</h3>
+<p>
+We plan the structure, design and features for your project.
+</p>
+</div>
+
+<div class="card">
+<h3>3️⃣ Design</h3>
+<p>
+A clean, modern and responsive design is created for your approval.
+</p>
+</div>
+
+<div class="card">
+<h3>4️⃣ Development</h3>
+<p>
+Your website is built with performance, SEO and security in mind.
+</p>
+</div>
+
+<div class="card">
+<h3>5️⃣ Launch</h3>
+<p>
+After final testing, your website goes live and is ready for the world.
+</p>
+</div>
+
+</div>
+
+</section>
+
+    <!-- =========================
+     HOMEPAGE FAQ
+========================= -->
+
+<section class="container">
+
+<h2 style="text-align:center; margin-bottom:15px;">
+Frequently Asked Questions
+</h2>
+
+<p style="text-align:center; color:var(--muted); max-width:720px; margin:0 auto 40px;">
+Quick answers to common questions about Nexvora website services.
+</p>
+
+<div class="card">
+
+<h3>How long does it take to build a website?</h3>
+
+<p>
+Most websites take approximately 1–3 weeks, depending on the number of pages,
+required features, content availability and revision process.
+</p>
+
+<hr>
+
+<h3>Will my website work on mobile devices?</h3>
+
+<p>
+Yes. Every Nexvora website is designed to work across desktops, tablets and
+mobile devices.
+</p>
+
+<hr>
+
+<h3>Do you work with clients outside Sri Lanka?</h3>
+
+<p>
+Yes. Nexvora provides remote digital services to businesses, startups and
+creators worldwide.
+</p>
+
+<hr>
+
+<h3>Is basic SEO included?</h3>
+
+<p>
+Yes. Websites include a search-friendly structure, page titles, meta
+descriptions, responsive design and basic technical SEO setup.
+</p>
+
+<hr>
+
+<h3>Can you redesign an existing website?</h3>
+
+<p>
+Yes. Nexvora can improve an existing website's appearance, mobile usability,
+structure and performance.
+</p>
+
+<hr>
+
+<h3>Do you provide support after launch?</h3>
+
+<p>
+Yes. Maintenance, content updates and technical support can be provided after
+the website is launched.
+</p>
+
+</div>
+
+</section>
+
+    <!-- =========================
+     TRUST BADGES
+========================= -->
+
+<section class="container">
+
+<h2 style="text-align:center; margin-bottom:15px;">
+Why Businesses Trust Nexvora
+</h2>
+
+<p style="text-align:center; color:var(--muted); max-width:720px; margin:0 auto 40px;">
+Every website is built using modern technologies and industry best practices.
+</p>
+
+<div class="features">
+
+<div class="card">
+<h3>🔒 Secure Websites</h3>
+<p>
+Built with security best practices and HTTPS support.
+</p>
+</div>
+
+<div class="card">
+<h3>⚡ Fast Performance</h3>
+<p>
+Optimized for speed and a smooth browsing experience.
+</p>
+</div>
+
+<div class="card">
+<h3>📈 SEO Optimized</h3>
+<p>
+Designed to help search engines understand your website.
+</p>
+</div>
+
+<div class="card">
+<h3>📱 Mobile First</h3>
+<p>
+Looks great on phones, tablets and desktop computers.
+</p>
+</div>
+
+</div>
+
+</section>
+<!-- =========================
+     FINAL CALL TO ACTION
+========================= -->
+
+<section class="container">
+
+    <div class="card" style="text-align:center;">
+
+        <h2>Ready to Build Your Website?</h2>
+
+        <p>
+            Let's create a modern website that helps your business grow online.
+        </p>
+
+        <a href="contact.html" class="btn primary">
+            Get Free Quote
+        </a>
+
+    </div>
+
+</section>
+    <a href="https://wa.me/94760920212?text=Hello%20Nexvora!%20I'm%20interested%20in%20your%20services."
+   class="whatsapp-chat"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat with Nexvora on WhatsApp">
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 32 32"
+         width="32"
+         height="32"
+         fill="white">
+        <path d="M19.11 17.21c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.08-.3-.15-1.28-.47-2.44-1.49-.9-.8-1.51-1.78-1.69-2.08-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.61-.92-2.2-.24-.58-.48-.5-.67-.51h-.57c-.2 0-.53.08-.8.38-.27.3-1.05 1.02-1.05 2.49s1.08 2.88 1.23 3.08c.15.2 2.12 3.24 5.13 4.54.72.31 1.28.49 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.41.25-.69.25-1.29.18-1.41-.08-.12-.27-.2-.57-.35z"/>
+        <path d="M16.01 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.59 4.46 1.72 6.39L3 29l6.79-1.78a12.74 12.74 0 0 0 6.22 1.59h.01c7.06 0 12.79-5.74 12.79-12.8S23.07 3.2 16.01 3.2zm0 23.3c-1.94 0-3.84-.52-5.5-1.51l-.39-.23-4.03 1.06 1.08-3.92-.25-.4a10.42 10.42 0 1 1 9.09 5z"/>
+    </svg>
+
+</a>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <h3>Nexvora</h3>
+
+        <p>
+            Web Design • Development • SEO • AI Solutions
+        </p>
+
+        <br>
+
+        <p>
+            © <span id="year"></span> Nexvora. All Rights Reserved.
+        </p>
+<p style="margin-top:15px;">
+
+<a href="privacy.html">Privacy Policy</a> |
+<a href="terms.html">Terms & Conditions</a> |
+<a href="disclaimer.html">Disclaimer</a>
+
+</p>
+    </div>
+
+</footer>
+    <button id="scroll-top" aria-label="Scroll to top">
+↑
+</button>
+<script src="js/articles.js"></script>
+<script src="js/script.js"></script>
+</body>
+    <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Nexvora",
+  "url":"https://nexvoraofficial.github.io/nexvora/",
+  "logo":"https://nexvoraofficial.github.io/nexvora/images/logo.png",
+  "description":"Professional Web Design, Web Development, SEO and AI Solutions.",
+  "email":"mailto:mailnexvora@gmail.com",
+  "sameAs":[
+    "https://www.facebook.com/",
+    "https://www.linkedin.com/",
+    "https://github.com/nexvoraofficial"
+  ]
+}
+</script>
+</html>
