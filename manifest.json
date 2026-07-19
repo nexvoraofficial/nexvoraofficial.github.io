@@ -1,0 +1,15 @@
+{
+  "name": "Nexvora",
+  "short_name": "Nexvora",
+  "start_url": "/nexvora/",
+  "display": "standalone",
+  "background_color": "#0b0f1a",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
