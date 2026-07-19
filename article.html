@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Article | Nexvora</title>
+
+<meta name="description" content="Read professional articles from Nexvora.">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container nav">
+
+<a href="../index.html" class="logo">
+<img src="../images/logo.png" alt="Nexvora Logo">
+</a>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="../services.html">Services</a>
+    <a href="../portfolio.html">Portfolio</a>
+    <a href="../blog.html" class="active">Blog</a>
+    <a href="../about.html">About</a>
+    <a href="../contact.html">Contact</a>
+
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+</nav>
+
+</div>
+
+</header>
+
+<main class="container article-page">
+
+<div id="article-container">
+
+<h1>Loading article...</h1>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="container">
+
+<h3>Nexvora</h3>
+
+<p>Web Design • Development • SEO • AI Solutions</p>
+
+<p>© <span id="year"></span> Nexvora. All Rights Reserved.</p>
+<p style="margin-top:15px;">
+
+<a href="../privacy.html">Privacy Policy</a> |
+<a href="../terms.html">Terms & Conditions</a> |
+<a href="../disclaimer.html">Disclaimer</a>
+
+</p>
+</div>
+
+</footer>
+
+<script src="js/articles.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const articleId = params.get("id");
+
+const article = articles.find(a => a.id === articleId);
+
+const container = document.getElementById("article-container");
+
+if(article){
+
+document.title = article.title + " | Nexvora";
+
+container.innerHTML = `
+
+<h1>${article.title}</h1>
+
+<p class="article-meta">
+
+${article.category}
+•
+${article.date}
+•
+${article.readTime}
+
+</p>
+
+<img src="${article.image}" alt="${article.title}" class="article-image">
+
+<p class="article-author">
+
+By ${article.author}
+
+</p>
+
+${article.content}
+
+<p style="margin-top:50px">
+
+<a href="blog.html" class="btn">
+
+← Back to Blog
+
+</a>
+
+</p>
+
+`;
+
+}else{
+
+container.innerHTML=`
+
+<h1>Article Not Found</h1>
+
+<p>The requested article doesn't exist.</p>
+
+<a href="blog.html" class="btn">
+
+Back to Blog
+
+</a>
+
+`;
+
+}
+
+</script>
+
+</body>
+</html>

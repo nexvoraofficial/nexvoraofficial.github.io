@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blog | Nexvora</title>
+
+<meta name="description" content="Read the latest AI, Web Design, SEO and Technology articles from Nexvora.">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8C72N6RZP2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8C72N6RZP2');
+</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="favicon.ico">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container nav">
+
+<a href="index.html" class="logo">
+<img src="images/logo.png" alt="Nexvora Logo">
+</a>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Nexvora Blog</h1>
+
+<p>
+Learn Web Design, AI, SEO, Programming and Online Business through practical tutorials.
+</p>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<div class="card">
+
+<h2>🔍 Search Articles</h2>
+
+<input
+id="article-search"
+type="search"
+placeholder="Search articles..."
+autocomplete="off">
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 style="text-align:center;margin:50px 0 25px;">
+Categories
+</h2>
+
+<div class="features">
+
+<div class="card" data-category="AI">
+<h3>🤖 AI</h3>
+<p>Artificial Intelligence tools and tutorials.</p>
+</div>
+
+<div class="card" data-category="Web Design">
+<h3>🌐 Web Design</h3>
+<p>Modern websites and UI inspiration.</p>
+</div>
+
+<div class="card" data-category="SEO">
+<h3>🚀 SEO</h3>
+<p>Google ranking tips and strategies.</p>
+</div>
+
+<div class="card" data-category="Programming">
+<h3>💻 Programming</h3>
+<p>HTML, CSS, JavaScript and more.</p>
+</div>
+</div>
+    
+<div style="text-align:center; margin-top:30px;">
+  <button id="show-all-articles" class="btn">
+    All Articles
+  </button>
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 style="text-align:center;margin:60px 0 30px;">
+Latest Articles
+</h2>
+
+<div id="blog-posts" class="features"></div>
+
+</section>
+
+
+<!-- =========================
+     NEWSLETTER
+========================= -->
+
+<section class="container">
+
+    <div id="newsletter-card" class="card" style="text-align:center;">
+
+        <h2>📩 Subscribe to Nexvora</h2>
+
+        <p>
+            Get the latest AI, Web Design, SEO and Tech articles delivered to your inbox.
+        </p>
+
+        <form action="https://formsubmit.co/mailnexvora@gmail.com" method="POST">
+
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="hidden" name="_subject" value="New Blog Newsletter Subscriber">
+
+    <input type="hidden" name="_template" value="table">
+
+    <input
+        type="hidden"
+        name="_next"
+        value="https://nexvoraofficial.github.io/nexvora/blog.html?subscribed=true">
+
+    <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required>
+
+    <button type="submit" class="btn primary">
+        Subscribe Free
+    </button>
+
+</form>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     PAGINATION
+========================= -->
+
+<section class="container" style="text-align:center; margin:50px auto;">
+
+    <a href="#" class="btn">1</a>
+    <a href="#" class="btn">2</a>
+    <a href="#" class="btn">3</a>
+
+</section>
+<script>
+const params = new URLSearchParams(window.location.search);
+
+if (params.get("subscribed") === "true") {
+
+    const message = document.createElement("div");
+
+    message.textContent = "✅ Thank you for subscribing!";
+
+    message.style.background = "#d4edda";
+    message.style.color = "#155724";
+    message.style.padding = "15px";
+    message.style.marginTop = "20px";
+    message.style.borderRadius = "10px";
+    message.style.fontWeight = "bold";
+    message.style.textAlign = "center";
+
+    const newsletterCard = document.getElementById("newsletter-card");
+    if (newsletterCard) {
+        newsletterCard.prepend(message);
+    }
+
+    window.history.replaceState(
+        {},
+        document.title,
+        window.location.pathname
+    );
+}
+</script>
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <h3>Nexvora</h3>
+
+        <p>
+            Web Design • Development • SEO • AI Solutions
+        </p>
+
+        <br>
+
+        <p>
+            © <span id="year"></span> Nexvora. All Rights Reserved.
+        </p>
+<p style="margin-top:15px;">
+
+<a href="privacy.html">Privacy Policy</a> |
+<a href="terms.html">Terms & Conditions</a> |
+<a href="disclaimer.html">Disclaimer</a>
+
+</p>
+    </div>
+
+</footer>
+<button id="scroll-top" aria-label="Scroll to top">
+    ↑
+</button>
+<script src="js/articles.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
