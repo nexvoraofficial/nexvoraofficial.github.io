@@ -74,7 +74,7 @@ const articles = [
 
   readTime: "24 min read",
 
-  image: "images/blog/web-hosting-guide.webp",
+  image: "images/blog/web-hosting-guide.png",
 
   description:
     "Learn how to choose the right web hosting in 2026. Compare Shared, VPS, Cloud, Dedicated and Managed WordPress Hosting to find the best hosting solution for your website."
