@@ -1035,3 +1035,32 @@ TABLE OF CONTENTS FIX
         display: flex;
     }
 }
+/* =========================
+   ARTICLE CARD IMAGE FIX
+========================= */
+
+.blog-card {
+  overflow: hidden;
+}
+
+.blog-card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-card-content {
+  padding: 24px;
+}
+
+@media (max-width: 768px) {
+  .blog-card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: cover;
+  }
+}
