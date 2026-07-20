@@ -3994,7 +3994,9 @@ No spam. Unsubscribe whenever you want.
 
 </section>
 
-
+<button onclick="window.open('https://www.effectivecpmnetwork.com/tii1birwmj?key=ef29ddc6332a39f41497f8740918a5e4','_blank')">
+    Explore Free AI Tools
+</button>
 <!-- =========================
      NEXVORA CTA
 ========================= -->
@@ -4100,3 +4102,470 @@ aria-label="Return to the Nexvora blog">
 <script src="https://www.highperformanceformat.com/8604280914bf604e1cfab8747288cb2b/invoke.js"></script>
 
 </div>
+     
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="container footer-content">
+
+<div class="footer-brand">
+
+<a
+href="../index.html"
+class="footer-logo"
+aria-label="Go to Nexvora home page">
+
+<img
+src="../images/logo.png"
+alt="Nexvora Logo"
+width="160"
+height="48"
+loading="lazy">
+
+</a>
+
+<p>
+Professional web design, development, SEO and AI solutions for modern
+businesses and digital creators.
+</p>
+
+</div>
+
+
+<div class="footer-links">
+
+<h3>
+Quick Links
+</h3>
+
+<a href="../index.html">
+Home
+</a>
+
+<a href="../services.html">
+Services
+</a>
+
+<a href="../portfolio.html">
+Portfolio
+</a>
+
+<a href="../blog.html">
+Blog
+</a>
+
+<a href="../about.html">
+About
+</a>
+
+<a href="../contact.html">
+Contact
+</a>
+
+</div>
+
+
+<div class="footer-links">
+
+<h3>
+Legal
+</h3>
+
+<a href="../privacy-policy.html">
+Privacy Policy
+</a>
+
+<a href="../terms.html">
+Terms and Conditions
+</a>
+
+<a href="../disclaimer.html">
+Disclaimer
+</a>
+
+</div>
+
+</div>
+
+
+<div class="container footer-bottom">
+
+<p>
+© <span id="year"></span> Nexvora. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+
+<!-- =========================
+     SCROLL TO TOP
+========================= -->
+
+<button
+id="scroll-top"
+type="button"
+aria-label="Scroll back to the top of the page"
+title="Back to top">
+
+↑
+
+</button>
+
+
+<!-- =========================
+     MAIN WEBSITE SCRIPT
+========================= -->
+
+<script src="../js/script.js"></script>
+
+
+<!-- =========================
+     ARTICLE PAGE JAVASCRIPT
+========================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const readingProgress = document.getElementById("reading-progress");
+  const articleContent = document.getElementById("article-content");
+  const scrollTopButton = document.getElementById("scroll-top");
+  const yearElement = document.getElementById("year");
+  const shareButtons = document.querySelectorAll("[data-share]");
+  const copyLinkButton = document.getElementById("copy-link-btn");
+  const copyMessage = document.getElementById("copy-message");
+  const newsletterForm = document.getElementById("newsletter-form");
+  const newsletterMessage =
+    document.getElementById("newsletter-message");
+
+
+  /* =========================
+     CURRENT YEAR
+  ========================= */
+
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+
+
+  /* =========================
+     READING PROGRESS
+  ========================= */
+
+  function updateReadingProgress() {
+
+    if (!readingProgress || !articleContent) {
+      return;
+    }
+
+    const articleTop =
+      articleContent.getBoundingClientRect().top +
+      window.scrollY;
+
+    const articleHeight = articleContent.offsetHeight;
+
+    const viewportHeight = window.innerHeight;
+
+    const scrollPosition = window.scrollY - articleTop;
+
+    const readableDistance =
+      articleHeight - viewportHeight;
+
+    let progress = 0;
+
+    if (readableDistance > 0) {
+
+      progress =
+        (scrollPosition / readableDistance) * 100;
+
+    }
+
+    progress = Math.max(0, Math.min(100, progress));
+
+    readingProgress.style.width = progress + "%";
+
+  }
+
+
+  /* =========================
+     SCROLL-TO-TOP BUTTON
+  ========================= */
+
+  function updateScrollTopButton() {
+
+    if (!scrollTopButton) {
+      return;
+    }
+
+    if (window.scrollY > 500) {
+
+      scrollTopButton.classList.add("show");
+
+    } else {
+
+      scrollTopButton.classList.remove("show");
+
+    }
+
+  }
+
+
+  if (scrollTopButton) {
+
+    scrollTopButton.addEventListener("click", function () {
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    });
+
+  }
+
+
+  /* =========================
+     SMOOTH TABLE OF CONTENTS
+  ========================= */
+
+  const internalLinks =
+    document.querySelectorAll('a[href^="#"]');
+
+  internalLinks.forEach(function (link) {
+
+    link.addEventListener("click", function (event) {
+
+      const targetId =
+        link.getAttribute("href");
+
+      if (!targetId || targetId === "#") {
+        return;
+      }
+
+      const targetElement =
+        document.querySelector(targetId);
+
+      if (!targetElement) {
+        return;
+      }
+
+      event.preventDefault();
+
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+      history.pushState(null, "", targetId);
+
+    });
+
+  });
+
+
+  /* =========================
+     SOCIAL SHARING
+  ========================= */
+
+  const articleUrl =
+    window.location.href.split("#")[0];
+
+  const articleTitle =
+    document.title;
+
+  const shareUrls = {
+
+    facebook:
+      "https://www.facebook.com/sharer/sharer.php?u=" +
+      encodeURIComponent(articleUrl),
+
+    linkedin:
+      "https://www.linkedin.com/sharing/share-offsite/?url=" +
+      encodeURIComponent(articleUrl),
+
+    twitter:
+      "https://twitter.com/intent/tweet?url=" +
+      encodeURIComponent(articleUrl) +
+      "&text=" +
+      encodeURIComponent(articleTitle),
+
+    whatsapp:
+      "https://wa.me/?text=" +
+      encodeURIComponent(
+        articleTitle + " " + articleUrl
+      )
+
+  };
+
+
+  shareButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+      const platform =
+        button.dataset.share;
+
+      const shareUrl =
+        shareUrls[platform];
+
+      if (!shareUrl) {
+        return;
+      }
+
+      window.open(
+        shareUrl,
+        "_blank",
+        "noopener,noreferrer,width=720,height=600"
+      );
+
+    });
+
+  });
+
+
+  /* =========================
+     COPY ARTICLE LINK
+  ========================= */
+
+  if (copyLinkButton) {
+
+    copyLinkButton.addEventListener("click", async function () {
+
+      try {
+
+        await navigator.clipboard.writeText(articleUrl);
+
+        if (copyMessage) {
+          copyMessage.textContent =
+            "Article link copied successfully.";
+        }
+
+        copyLinkButton.textContent =
+          "Copied ✓";
+
+        setTimeout(function () {
+
+          copyLinkButton.textContent =
+            "Copy Link";
+
+          if (copyMessage) {
+            copyMessage.textContent = "";
+          }
+
+        }, 2500);
+
+      } catch (error) {
+
+        const temporaryInput =
+          document.createElement("input");
+
+        temporaryInput.value =
+          articleUrl;
+
+        document.body.appendChild(temporaryInput);
+
+        temporaryInput.select();
+
+        document.execCommand("copy");
+
+        temporaryInput.remove();
+
+        if (copyMessage) {
+          copyMessage.textContent =
+            "Article link copied successfully.";
+        }
+
+      }
+
+    });
+
+  }
+
+
+  /* =========================
+     NEWSLETTER FORM
+  ========================= */
+
+  if (newsletterForm) {
+
+    newsletterForm.addEventListener("submit", function (event) {
+
+      event.preventDefault();
+
+      const emailInput =
+        document.getElementById("newsletter-email");
+
+      if (!emailInput) {
+        return;
+      }
+
+      const email =
+        emailInput.value.trim();
+
+      const emailPattern =
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!emailPattern.test(email)) {
+
+        if (newsletterMessage) {
+          newsletterMessage.textContent =
+            "Please enter a valid email address.";
+        }
+
+        emailInput.focus();
+
+        return;
+
+      }
+
+      if (newsletterMessage) {
+
+        newsletterMessage.textContent =
+          "Thank you for subscribing. Newsletter delivery will be available soon.";
+
+      }
+
+      newsletterForm.reset();
+
+    });
+
+  }
+
+
+  /* =========================
+     SCROLL EVENTS
+  ========================= */
+
+  function handleScroll() {
+
+    updateReadingProgress();
+
+    updateScrollTopButton();
+
+  }
+
+  window.addEventListener(
+    "scroll",
+    handleScroll,
+    { passive: true }
+  );
+
+  window.addEventListener(
+    "resize",
+    updateReadingProgress
+  );
+
+  handleScroll();
+
+});
+
+</script>
+
+</body>
+
+</html>
