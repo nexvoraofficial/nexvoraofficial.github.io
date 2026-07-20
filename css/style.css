@@ -1014,3 +1014,24 @@ TABLE OF CONTENTS FIX
     padding-left: 4px;
   }
 }
+.desktop-ad {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.mobile-ad {
+    display: none;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .desktop-ad {
+        display: none;
+    }
+
+    .mobile-ad {
+        display: flex;
+    }
+}
