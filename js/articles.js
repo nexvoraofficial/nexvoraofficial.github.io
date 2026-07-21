@@ -84,7 +84,7 @@ const articles = [
   title: "Website vs Facebook Page: Which Is Better for Your Business in 2026?",
   description:
     "Should your business have a website or just a Facebook Business Page? Learn the key differences, SEO benefits, marketing advantages, costs and discover the best strategy for growing your business in 2026.",
-  image: "images/blog/website-vs-facebook-page.png",
+  image: "images/blog/website-vs-facebook-hero.png",
   category: "Business",
   author: "Nexvora Team",
   date: "July 22, 2026",
