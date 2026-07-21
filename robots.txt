@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nexvoraofficial.github.io/nexvora/sitemap.xml
+Sitemap: https://nexvoraofficial.github.io/sitemap.xml
