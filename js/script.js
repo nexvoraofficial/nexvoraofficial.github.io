@@ -298,3 +298,71 @@ document.addEventListener("DOMContentLoaded", function () {
 
   toggleScrollTopButton();
 });
+// ==========================
+// Newsletter Subscribe
+// ==========================
+
+const subscribeForms = document.querySelectorAll(".subscribe-form");
+
+subscribeForms.forEach(form => {
+  form.addEventListener("submit", async event => {
+    event.preventDefault();
+
+    const emailInput = form.querySelector('input[type="email"]');
+    const submitButton = form.querySelector('button[type="submit"]');
+    const message = form.querySelector(".subscribe-message");
+
+    if (!emailInput || !submitButton) return;
+
+    const email = emailInput.value.trim();
+
+    if (!email) {
+      if (message) {
+        message.textContent = "Please enter your email address.";
+      }
+      return;
+    }
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Subscribing...";
+
+    if (message) {
+      message.textContent = "";
+    }
+
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbyDf3jswHt8bixUwMdNS7GQC2NWmzZh2LPhmN3TOmED9O6uTwxEU2nFhF43g8yD2ZaX/exec",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            email: email
+          })
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.status === "success") {
+        if (message) {
+          message.textContent = "✓ Thank you for subscribing!";
+        }
+
+        emailInput.value = "";
+      } else if (result.status === "exists") {
+        if (message) {
+          message.textContent = "This email is already subscribed.";
+        }
+      } else {
+        throw new Error("Subscription failed");
+      }
+    } catch (error) {
+      if (message) {
+        message.textContent = "Unable to subscribe. Please try again.";
+      }
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = "Subscribe";
+    }
+  });
+});
