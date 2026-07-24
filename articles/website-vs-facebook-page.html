@@ -3094,61 +3094,6 @@ aria-label="Scroll to the top">
 <script src="../js/script.js"></script>
 
 
-<!-- =========================
-     COPY ARTICLE LINK
-========================= -->
-
-<script>
-
-document.addEventListener("DOMContentLoaded", function () {
-
-  const copyButton =
-    document.getElementById("copy-article-link");
-
-  if (!copyButton) {
-    return;
-  }
-
-  copyButton.addEventListener("click", async function () {
-
-    const articleUrl =
-      "https://nexvoraofficial.github.io/articles/website-vs-facebook-page.html";
-
-    try {
-
-      await navigator.clipboard.writeText(articleUrl);
-
-      copyButton.textContent = "Link Copied ✓";
-
-    } catch (error) {
-
-      const temporaryInput =
-        document.createElement("input");
-
-      temporaryInput.value = articleUrl;
-
-      document.body.appendChild(temporaryInput);
-
-      temporaryInput.select();
-
-      document.execCommand("copy");
-
-      temporaryInput.remove();
-
-      copyButton.textContent = "Link Copied ✓";
-
-    }
-
-    setTimeout(function () {
-
-      copyButton.textContent = "Copy Link";
-
-    }, 2500);
-
-  });
-
-});
-
 </script>
 
 </body>
