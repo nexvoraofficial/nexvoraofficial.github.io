@@ -21,19 +21,6 @@ document.querySelectorAll("nav a").forEach(link => {
   }
 });
 
-// Smooth button animation
-document.querySelectorAll(".btn").forEach(btn => {
-  btn.addEventListener("mouseenter", () => {
-    btn.style.transform = "translateY(-3px)";
-  });
-
-  btn.addEventListener("mouseleave", () => {
-    btn.style.transform = "translateY(0)";
-  });
-});
-
-console.log("Nexvora Loaded Successfully");
-
 // ==========================
 // Blog Render + Search
 // ==========================
